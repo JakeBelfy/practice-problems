@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    function pocketChangeCalculator(changeArray, itemCost){
+      var quarters = changeArray[0] * .25
+      var dimes = changeArray[1] * .10
+      var nickels = changeArray[2] * .05
+      var pennies = changeArray[3] * .01
+
+
+      return itemCost <= quarters + dimes + nickels + pennies
+    }
+
+
+    console.log(pocketChangeCalculator([10, 5, 5, 4], 2.50));
+    console.log(pocketChangeCalculator([15, 4, 20, 15], 7.25));
+    console.log(pocketChangeCalculator([6, 20, 10, 6], 4.00));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>
