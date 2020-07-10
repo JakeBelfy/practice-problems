@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function digitFilter(numbersArray, numberFilter){
+      var returnArray = [];
+
+      for(var index = 0; index < numbersArray.length; index++){
+        if(numbersArray[index].toString().length === numberFilter){
+          returnArray.push(numbersArray[index])
+        }
+      }
+      return returnArray;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //function digitFilter(numbersArray, numberFilter){
+     // var index = [];
+     // for(var i=0; i < numbersArray.length; i++){
+      // var indexTwo = numbersArray[i].toString();
+       // if(indexTwo.length==numberFilter){
+        //  result.push(numbersArray[i]);
+       // }
+     // }
+     // return result
+   // }
+
+    console.log(digitFilter([23, 312, 24, 243, 43], 3));
+    console.log(digitFilter([23, 315, 231, 54, 72], 2));
+    console.log(digitFilter([1, 4323, 23, 4565, 3, 4], 1));
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>
